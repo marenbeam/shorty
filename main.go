@@ -10,7 +10,7 @@ import (
 )
 
 func helloEndpoint(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintln(w, "hello!")
+	fmt.Fprintln(w, "hello :)")
 	return
 }
 

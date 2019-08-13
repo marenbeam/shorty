@@ -1,2 +1,2 @@
-# shortly
+# shorty
 A URL shortener

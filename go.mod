@@ -1,4 +1,4 @@
-module shortly
+module shorty
 
 go 1.12
 
