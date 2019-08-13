@@ -11,6 +11,7 @@ import (
 
 func helloEndpoint(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintln(w, "hello!")
+	return
 }
 
 func main() {
@@ -26,5 +27,5 @@ func main() {
 	}
 
 	log.Printf("Listening on port %s", port)
-	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", port), nil))
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%s", port), router))
 }
